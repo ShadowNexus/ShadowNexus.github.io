@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="index.css" type="text/css" rel="stylesheet"></link>
+  </head>
+  <body>
+    <div class="NestedSelect">
+      <label><input type="radio" name="MySelectInputName"><span>Fruit</span></label>
+      <div>
+          <label><input type="radio" name="MySelectInputName"><span>Apple</span></label>
+          <label><input type="radio" name="MySelectInputName"><span>Banana</span></label>
+          <label><input type="radio" name="MySelectInputName"><span>Orange</span></label>
+      </div>
+
+      <label><input type="radio" name="MySelectInputName"><span>Drink</span></label>
+      <div>
+          <label><input type="radio" name="MySelectInputName"><span>Water</span></label>
+
+          <label><input type="radio" name="MySelectInputName"><span>Soft</span></label>
+          <div>
+              <label><input type="radio" name="MySelectInputName"><span>Cola</span></label>
+              <label><input type="radio" name="MySelectInputName"><span>Soda</span></label>
+              <label><input type="radio" name="MySelectInputName"><span>Lemonade</span></label>
+          </div>
+
+          <label><input type="radio" name="MySelectInputName"><span>Hard</span></label>
+          <div>
+              <label><input type="radio" name="MySelectInputName"><span>Bear</span></label>
+              <label><input type="radio" name="MySelectInputName"><span>Whisky</span></label>
+              <label><input type="radio" name="MySelectInputName"><span>Vodka</span></label>
+              <label><input type="radio" name="MySelectInputName"><span>Gin</span></label>
+          </div>
+      </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <ul>
+      <li>
+          <input type="radio" name="location" value="0" id="loc_0" />
+          <label for="loc_0">United States</label>
+
+          <ul>
+              <li>
+                  Northeast
+
+                  <ul>
+                      <li>
+                          <input type="radio" name="location" value="1" id="loc_1" />
+                          <label for="loc_1">New Hampshire</label>
+                      </li>
+
+                      <li>
+                          <input type="radio" name="location" value="2" id="loc_2" />
+                          <label for="loc_2">Vermont</label>
+                      </li>
+
+                      <li>
+                          <input type="radio" name="location" value="3" id="loc_3" />
+                          <label for="loc_3">Maine</label>
+                      </li>
+                  </ul>
+              </li>
+
+              <li>
+                  Southeast
+
+                  <ul>
+                      <li>
+                          <input type="radio" name="location" value="4" id="loc_4" />
+                          <label for="loc_4">Georgia</label>
+                      </li>
+
+                      <li>
+                          <input type="radio" name="location" value="5" id="loc_5" />
+                          <label for="loc_5">Alabama</label>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </li>
+
+      <li>
+          <input type="radio" name="location" value="6" id="loc_6" />
+          <label for="loc_6">Canada</label>
+
+          <ul>
+              <li>
+                  <input type="radio" name="location" value="7" id="loc_7" />
+                  <label for="loc_7">Ontario</label>
+              </li>
+
+              <li>
+                  <input type="radio" name="location" value="8" id="loc_8" />
+                  <label for="loc_8">Quebec</label>
+              </li>
+
+              <li>
+                  <input type="radio" name="location" value="9" id="loc_9" />
+                  <label for="loc_9">Manitoba</label>
+              </li>
+          </ul>
+      </li>
+  </ul>
+  </body>
+</html>

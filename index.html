@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <title></title>
+    <link href="index.css" type="text/css" rel="stylesheet">
+    </link>
+		<script>
+			var Open_New_Window = "";
+			function Reload_iFrame(Selections_Choice_Menu) {
+				Open_New_Window = document.getElementById(Selections_Choice_Menu).value.split(" ")[0];
+				document.getElementById("Showcase_iFrame").src=document.getElementById(Selections_Choice_Menu).value.split(" ")[0];
+				document.getElementById("Showcase_iFrame").width=document.getElementById(Selections_Choice_Menu).value.split(" ")[1];
+				document.getElementById("Showcase_iFrame").height=document.getElementById(Selections_Choice_Menu).value.split(" ")[2];
+				document.getElementById(Selections_Choice_Menu).selectedIndex= 0;
+			}
+			function New_Window_Function() {
+				window.open(Open_New_Window);
+			}
+		</script>
+	</head>
+	<body>
+    <div class="div_class" id="Main_Header">
+		<div class="Main_Header_Text" id="Main_Header_Text_Line1">Projects and Ideas<br>Webpage</div>
+
+			<img id="Main_Header_Image" src="Seattle-Cityscape-Silhouette.png"></img>
+		</div>
+
+		<div class="div_class" id="Nav_Menu">
+
+			<select class="Drop_Down_Menu" id="Home_Select" name="Home_Selection" onclick="Reload_iFrame('Home_Select')">
+	      <option class="Option_Class" value="home.html 400 400" hidden="true" selected>Home</option>
+	    </select>
+
+			<select class="Drop_Down_Menu" id="Project_Select" name="Projects_Selection" onchange="Reload_iFrame('Project_Select')">
+	      <option class="Option_Class" value="Main_Page" hidden="true" selected>Projects</option>
+	      <option class="Option_Class" value="../2017/Code_Fellows/101/Projects/Popular_Books/index.html 715 1166">101-Popular Books</option>
+	    </select>
+
+			<select class="Drop_Down_Menu" id="Ideas_Select" name="Ideas_Selection" onchange="Reload_iFrame('Ideas_Select')">
+	      <option class="Option_Class" value="Main_Page" hidden="true" selected>Ideas</option>
+	      <option class="Option_Class" value="Change_.scr_of_iFrame_with_button/index.html 715 317">Change .scr of iFrame with button</option>
+				<option class="Option_Class" value="Change_the_Color_of_a_button_using_an_Input_Tag/index.html 260 140">Change the Color of a button using an Input Tag</option>
+				<option class="Option_Class" value="Convert_Value_Into_Array/index.html 750 400">Convert Value Into Array</option>
+				<option class="Option_Class" value="Custom_Menu_using_div_tag/index.html 325 90">Custom Menu using div tag</option>
+				<option class="Option_Class" value="Different_Types_of_Drop_Down_Lists/index.html 230 410">Different Types of Drop Down Lists</option>
+				<option class="Option_Class" value="Duplication_of_object/index.html 450 425">Duplication of object</option>
+	      <option class="Option_Class" value="Rotate_and_object_using_CSS/index.html 240 225">Rotate and object using CSS</option>
+			</select>
+
+			<select class="Drop_Down_Menu" id="About_Me_Select" name="About_Me_Selection" onclick="Reload_iFrame('About_Me_Select')">
+	      <option class="Option_Class" value="About_Me.html 325 200" hidden="true" selected>About Me</option>
+	     </select>
+
+			 <select class="Drop_Down_Menu" id="New_Window_Select" name="New_Window_Selection" onclick="New_Window_Function()">
+				 <option class="Option_Class" value="New_Window_Page" hidden="true" selected>New Window</option>
+				</select>
+
+			<div class="div_class" id="Main_Content"></div>
+		</div>
+
+    <br>
+		<div class="div_class" id="iFrame_Div">
+
+			<iframe class="iFrame_Class" id="Showcase_iFrame" src="home.html" scrolling="no" width="400" height="400"></iframe>
+
+		</div>
+	</body>
+</html>

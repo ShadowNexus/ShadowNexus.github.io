@@ -1,0 +1,67 @@
+
+
+#Box1_ID {
+  visibility: visible;
+}
+
+#Box2_ID, #Box3_ID, #Box4_ID, #Box5_ID, #Box6_ID, #Box7_ID {
+  visibility: hidden;
+}
+
+#Box1_ID:hover #Box2_ID, #Box1_ID:hover #Box4_ID {
+  visibility: visible;
+}
+
+#Box2_ID:hover #Box3_ID, #Box2_ID:hover #Box5_ID, #Box2_ID:hover #Box6_ID {
+  visibility: visible;
+}
+
+#Box5_ID:hover #Box7_ID {
+  visibility: visible;
+}
+
+.Box_Class {
+  position: relative;
+  height: 17px;
+  padding-left: 2px;
+  border: 1px black solid;
+  z-index: 10;
+  background-color: white;
+}
+
+[name~=Menu_Level1]:hover, [name~=Menu_Level2]:hover, [name~=Menu_Level3]:hover  {
+  background-color: #43dbef;
+}
+
+[name~=Menu_Level0] {
+  width: 100px;
+}
+
+[name~=Menu_Level1] {
+  margin-left: -3px;
+  margin-top: -1px;
+  width: 100px;
+}
+[name~=Menu_Level2] {
+  margin-left: 100px;
+  position: relative;
+  margin-top: -.5px;
+  margin-bottom: -1px;
+  top: -19px;
+  width: 100px;
+}
+
+[name~=Menu_Level3] {
+  margin-left: 100px;
+  position: relative;
+  top: -19px;
+  width: 100px;
+}
+
+.Menu_Arrow {
+  position: relative;
+  top: 4px;
+  height: 10px;
+  width: 10px;
+  float: right;
+}

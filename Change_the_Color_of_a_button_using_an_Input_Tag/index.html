@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <title>Button Color</title>
+    <link href="index.css" type="text/css" rel="stylesheet">
+    </link>
+		<script>
+			function Change_Color_Function(var_Button_id, var_tcolor, var_bgcolor) {
+				document.getElementById(var_Button_id).style.color = var_tcolor;
+				document.getElementById(var_Button_id).style.background = var_bgcolor;
+			}
+		</script>
+	</head>
+	<body>
+		<P>
+			<div style="width: 260px; display: table;">
+				<div style="display: table-row">
+					<div style="width: 60px; display:table-cell; text-align: center;"></div>
+					<div style="width: 40px; display:table-cell; text-align: center;">Text<br>Color</div>
+					<div style="width: 80px; display:table-cell; text-align: center;">Background Color</div>
+				</div>
+			</div>
+		<p>
+			<button class="myButton" id="Red_Button" onclick="Change_Color_Function('Red_Button', document.getElementById('Red_Button_TColor').value, document.getElementById('Red_Button_BGColor').value)">Button 1</button>
+			<input class="Input_Box" type="text" id="Red_Button_TColor">
+			<input class="Input_Box" type="text" id="Red_Button_BGColor">
+		</p>
+		<p>
+			<button class="myButton" id="Blue_Button" onclick="Change_Color_Function('Blue_Button', document.getElementById('Blue_Button_TColor').value, document.getElementById('Blue_Button_BGColor').value)">Button 2</button>
+			<input class="Input_Box" type="text" id="Blue_Button_TColor">
+			<input class="Input_Box" type="text" id="Blue_Button_BGColor">
+		</p>
+	</body>
+</html>

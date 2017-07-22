@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <title></title>
+    <link href="index.css" type="text/css" rel="stylesheet">
+    </link>
+		<script>
+			function Create_Array_Function() {
+				var test=document.getElementById('Variables_Input').value
+				document.getElementById("Array_1").value=document.getElementById('Variables_Input').value.split(", ")[0];
+				document.getElementById("Array_2").value=document.getElementById('Variables_Input').value.split(", ")[1];
+				document.getElementById("Array_3").value=document.getElementById('Variables_Input').value.split(", ")[2];
+				document.getElementById("Array_4").value=document.getElementById('Variables_Input').value.split(", ")[3];
+				document.getElementById("Array_5").value=document.getElementById('Variables_Input').value.split(", ")[4];
+				document.getElementById("Array_6").value=document.getElementById('Variables_Input').value.split(", ")[5];
+				document.getElementById("Array_7").value=document.getElementById('Variables_Input').value.split(", ")[6];
+				document.getElementById("Array_8").value=document.getElementById('Variables_Input').value.split(", ")[7];
+				document.getElementById("Array_9").value=document.getElementById('Variables_Input').value.split(", ")[8];
+			}
+		</script>
+	</head>
+	<body>
+		<div>How to convert a string into an array and reference indecies on one line</div>
+
+<br>
+		<div>Enter up to 9 variables here seperated by a comma and a space ', '</div>
+		<p>
+			<input class="Input_Box" type="text" id="Variables_Input">
+		</p>
+			<button class="myButton" id="Create_Array" onclick="Create_Array_Function()">Create Array</button>
+		</p>
+		<p>
+			<input class="Output_Box" type="text" id="Array_1">
+			<input class="Output_Box" type="text" id="Array_2">
+			<input class="Output_Box" type="text" id="Array_3">
+		</p>
+		<p>
+			<input class="Output_Box" type="text" id="Array_4">
+			<input class="Output_Box" type="text" id="Array_5">
+			<input class="Output_Box" type="text" id="Array_6">
+		</p>
+		</p>
+			<input class="Output_Box" type="text" id="Array_7">
+			<input class="Output_Box" type="text" id="Array_8">
+			<input class="Output_Box" type="text" id="Array_9">
+		</p>
+
+
+		<div><font color="red">document.getElementById("Array_1").value</font>=<font color="blue">document.getElementById('Variables_Input').value</font>.<font color="green">split(", ")</font><font color="magenta">[0]</font>;</div>
+		<br>
+		<div><font color="red">document.getElementById("Array_1").value</font> - Sets the output value of elemet ID'd as 'Array_1'</div>
+		<div><font color="blue">document.getElementById('Variables_Input').value</font> - Grabs the value of the element providing the string</div>
+		<div><font color="green">split(", ")</font> - Defines the seperation to occure whenever a ', ' is found within the string and sets up the array</div>
+		<div><font color="magenta">[0]</font> - Defines the item within the array that is to be outputted</div>
+
+
+
+	</body>
+</html>

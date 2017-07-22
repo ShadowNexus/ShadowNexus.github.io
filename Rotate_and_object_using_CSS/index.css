@@ -1,0 +1,37 @@
+.circle1{
+    position:absolute;
+    top:40px;
+    left:40px;
+    width:0;
+    height:0;
+    border-style: solid;
+    border-width: 80px;
+    border-color: red blue green orange;
+    border-radius: 80px;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    /*This causes item to rotae*/
+    -webkit-animation-name: Rotate_Clockwise;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+.circle1:hover {
+  -webkit-animation-name: Rotate_Counter_Clockwise;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes Rotate_Clockwise{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+@-webkit-keyframes Rotate_Counter_Clockwise {
+    from {-webkit-transform: rotate(360deg);}
+    to {-webkit-transform: rotate(0deg);}
+}
+
+#div_P {
+  text-align: center;
+  width: 240px;
+}

@@ -1,0 +1,78 @@
+#Main_Header {
+  background-color: #02b3ff;
+  position:relative;
+  height: 216px;
+  display: block;
+/*  border: 1px green solid;*/
+}
+
+#Nav_Menu {
+  background-color: blue;
+  height: 23px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.Drop_Down_Menu {
+  position: relative;
+  top: 2px;
+  z-index: 2;
+  background-color: #b8babc;
+  -webkit-appearance: none;
+}
+
+.div_class {
+  width: 750px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Drop_Down_Menu {
+  width: 100px;
+  text-align-last: center;
+}
+
+#Showcase_iFrame {
+  position: relative;
+
+  top: -20px;
+/*  border: none;*/
+  border: 1px red solid;
+}
+
+.iFrame_Class {
+  display: block;
+  margin: 0 auto;
+}
+
+#Main_Header_Image {
+  width: inherit;
+  height: auto;
+  display: block;
+/*  border: 1px red solid;*/
+}
+#Main_Header_Text_Line1 {
+  left: 340px;
+  top: 10px;
+/*  border: 1px red solid;*/
+}
+#Main_Header_Text_Line2 {
+  left: 500px;
+  top: 67.5px;
+/*  border: 1px red solid;*/
+}
+
+.Main_Header_Text {
+    position: absolute;
+    z-index: 2;
+    text-align: right;
+    color: blue;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+}
+
+.Option_Class {
+  background-color: White;
+}
